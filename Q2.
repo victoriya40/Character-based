@@ -1,18 +1,20 @@
 import java.util.Scanner;
-public class Main {
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        System.out.print("Enter a character: ");
-        char ch = sc.next().charAt(0);
-        if(ch >= 'A' && ch <= 'Z') {
-            System.out.println(ch + " is uppercase");
-        } else if(ch >= 'a' && ch <= 'z') {
-            System.out.println(ch + " is lowercase");
-        } else if(ch >= '0' && ch <= '9') {
-            System.out.println(ch + " is a digit");
-        } else {
-            System.out.println(ch + " is a special symbol");
+public class Main{
+    public static void main(String[]args){
+        Scanner sc=new Scanner(System.in);
+        System.out.print("character: ");
+        char ch=sc.next().charAt(0);
+        if(ch>='A'&&ch<='Z'){
+            System.out.println("Upper case");
         }
-        sc.close();
+        else if(ch>='a'&&ch<='z'){
+            System.out.println("Lower case");
+        }
+        else if(ch>=1&&ch<=1000){
+            System.out.println("Digits");
+        }
+        else{
+            System.out.println(" Special Symbol ");
+        }
+        }
     }
-}
